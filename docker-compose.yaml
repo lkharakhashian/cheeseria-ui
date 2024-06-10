@@ -1,0 +1,17 @@
+services:
+  nodejs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    networks:
+      - cheeseria-net
+    container_name: ui-container
+    ports:
+      - '3001:3000'
+    expose:
+      - '3001'
+
+networks:
+  cheeseria-net:
+    name: cheeseria-net
+    driver: bridge
