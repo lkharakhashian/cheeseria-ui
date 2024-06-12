@@ -88,7 +88,7 @@ docker build -t cheeseria-ui .
 
 ## Folder Structure
 
-```
+.
 cheeseria-app/
 ├── public/
 │   └── index.html
